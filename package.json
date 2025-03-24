@@ -1,0 +1,26 @@
+{
+  "name": "memorial-online",
+  "version": "1.0.0",
+  "description": "Plataforma SaaS white label para criação e gerenciamento de memoriais online",
+  "scripts": {
+    "init": "npm run init:frontend && npm run init:backend",
+    "init:frontend": "cd frontend && npm install",
+    "init:backend": "cd backend && npm install",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test"
+  },
+  "keywords": [
+    "memorial",
+    "saas",
+    "white-label"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
